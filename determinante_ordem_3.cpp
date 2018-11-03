@@ -15,12 +15,11 @@ int main(int argc, char *argv[]){
 		{2, 9, 5},
 		{7, 2, 0}};
 
-/* DIAGONAL PRINCIPAL 		= 161
+/* DIAGONAL PRINCIPAL  = 161
  * DIAGONAL SECUNDARIA = 287
  		{1, 3, 4|1, 3}
 		{2, 9, 5|2, 9}
-		{7, 7, 0|7, 7} 
-* */
+		{7, 7, 0|7, 7} */
 
 	int vetor_dp[3][3];
 	int vetor_ds[3][3];
@@ -40,8 +39,8 @@ int main(int argc, char *argv[]){
 	cout << "-----\n";
 	/* ordena a matriz de forma que
 	 * o calculo da diagonal principal
-	 * fica em colunas.
-	 */
+	 * fica em colunas. */
+	
 	 cout << "Diagonal Principal ordenada em colunas\n";
 	for(i = 0; i < 3; i++){
 		for(j = 0; j < 3; j++){
@@ -53,8 +52,7 @@ int main(int argc, char *argv[]){
 	}
 	cout << "-----\n";
 	/* ira multiplicar cada coluna para
-	 * achar a diagonal principal
-	 */
+	 * achar a diagonal principal. */
 	 for(i = 0; i < 3; i++){
 		 tmp = 1;
 		 for(j = 0; j < 3; j++){
@@ -65,8 +63,7 @@ int main(int argc, char *argv[]){
 	 
 	 /* ordena a matriz de forma que o
 	  * calculo da diagonal secundaria
-	  * fique em colunas
-	  */
+	  * fique em colunas */
 	cout << "Reordena a Matriz de modo que a Diagonal Secundaria passe a ser o calculo da Diagonal Principal\n";
 	 for(i = 0; i < 3; i++){
 		 for(j = 2; j > -1; j--){
@@ -89,8 +86,7 @@ int main(int argc, char *argv[]){
 	 cout << "-----\n";
 
 	/* ira multiplicar cada coluna para 
-	 * achar a diagonal secundaria
-	 */
+	 * achar a diagonal secundaria */
 	 tmp_2 = 0;
 	 for(i = 0; i < 3; i++){
 		 tmp = 1;
